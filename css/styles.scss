@@ -345,14 +345,14 @@ footer {
     .intro-img-mobile {
       position: absolute;
       right: 0;
-      margin: 5rem 2.4rem;
+      margin: 5em 2.4rem;
       max-width: 45%;
     }
     .intro-text {
-      padding: 7rem 0;
+      padding: 9rem 0;
       text-align: left;
+      width: 100%;
       .text-wrap {
-        // text-align: left;
         max-width: 50%;
       }
     }
@@ -399,9 +399,9 @@ footer {
     display: none;
   }
 
-  //   .intro-img-mobile {
-  //     max-width: 100%;
-  //   }
+  .intro-img-mobile {
+    max-width: 100%;
+  }
 
   section.different .cards {
     flex-direction: row;
@@ -427,15 +427,6 @@ footer {
     max-width: 1440px;
     padding: 0 16.5rem;
     margin: 0 auto;
-    // .intro-img-mobile {
-    //   position: absolute;
-    //   right: 0;
-    //   margin: 5rem 10rem;
-    //   max-width: 45%;
-    // }
-    // .intro-text {
-    //   max-width: 60%;
-    // }
   }
 
   #plans {
@@ -443,27 +434,32 @@ footer {
   }
 
   section.intro {
-    max-height: 600px;
+    display: block;
     .intro-img-mobile {
       display: none;
     }
     .intro-img-desktop {
       display: flex;
       position: absolute;
+      z-index: 3;
       right: 0;
       overflow-y: hidden;
+
       img {
         transform: translateY(-80px);
       }
     }
     .intro-text {
-      max-width: 100%;
       background-image: none;
       padding-top: 10.5rem;
-      display: flex;
+      padding-bottom: 12rem;
+      display: inline-block;
+
       .text-wrap {
-        width: 49%;
+        max-width: 700px;
+        width: 50%;
         hr {
+          margin: unset;
           display: block;
           max-width: 150px;
           border-color: #fff;
@@ -478,11 +474,15 @@ footer {
           margin-bottom: 2.4rem;
         }
       }
-      //   .img-wrap {
-      //     .intro-hero-desktop {
-      //         display: flex;
-      //     }
-      //   }
+      .img-wrap {
+        width: 50%;
+
+        .intro-hero-desktop {
+          display: flex;
+          position: absolute;
+          margin-left: 2rem;
+        }
+      }
       .container {
         display: flex;
         justify-content: space-between;
